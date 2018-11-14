@@ -1,5 +1,7 @@
+require 'pry'
 
 <% @teams.each do |team| %>
+binding.pry
 <%= team.name %>
 <%=  team.motto %>
 <% end  %>
@@ -10,4 +12,4 @@
   <%=  hero.name %>
   <%=  hero.power %>
   <%=  hero.bio %>
-  <% end  %> 
+  <% end  %>
