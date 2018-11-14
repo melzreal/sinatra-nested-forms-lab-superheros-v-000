@@ -13,7 +13,7 @@ class Team
   end
 
   def self.clear
-    @@team_members
+    @@team_members.clear
   end
 
 
