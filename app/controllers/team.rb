@@ -3,9 +3,9 @@ class Team
 
   @@team_members = []
 
-  def initialize(attributes)
-      attributes.each {|key, value| self.send(("#{key}="), value)}
-      @@team_members << self
+  def initialize(name, motto)
+    @name = name
+    @motto = motto
   end
 
   def self.all
