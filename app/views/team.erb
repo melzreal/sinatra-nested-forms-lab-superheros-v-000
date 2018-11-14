@@ -1,3 +1,15 @@
 
 
 
+<% @teams.each do |team| %>
+<%= team.name %>
+<%=  team.motto %>
+<% end  %>
+
+<br>
+
+<%= @heroes.each do |hero| %>
+  <%=  hero.name %>
+  <%=  hero.power %>
+  <%=  hero.bio %>
+  <% end  %> 
