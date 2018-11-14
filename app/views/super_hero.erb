@@ -1,26 +1,48 @@
 <form action='/team' method="POST">
   <h2>Create a Team and Heroes ! </h2>
-  <label for="pirate_name">Name</label><br>
-  <input id="pirate_name" type="text" name="pirate[name]" /><br>
-  
-  <label for="pirate_weight">Weight</label><br>
-  <input id="pirate_weight" type="text" name="pirate[weight]" /><br>
-  <label for="pirate_height">Height</label><br>
-  <input id="pirate_height" type="text" name="pirate[height]" /><br><br>
+  <label for="team_name">Team Name: </label><br>
+  <input id="team_name" type="text" name="team[name]" /><br>
+  <label for="team_motto">Team Motto: </label><br>
+  <input id="team_motto" type="text" name="team[motto]" /><br>
 
-  <h2>Ship(s)</h2>
-  <label for="ship_name_1">Name</label><br>
-  <input id="ship_name_1" type="text" name="pirate[ships][][name]" /><br>
-  <label for="ship_type_1">Type</label><br>
-  <input id="ship_type_1" type="text" name="pirate[ships][][type]" /><br>
-  <label for="ship_booty_1">Booty</label><br>
-  <input id="ship_booty_1" type="text" name="pirate[ships][][booty]" /><br><br>
+  <h3> Hero 1</h3>
+  <label for="member1_name">Hero's Name: </label><br>
+  <input id="member1_name" type="text" name="hero[name]" /><br>
+  <label for="member1_power">Hero's Power: </label><br>
+  <input id="member1_power" type="text" name="hero[power]" /><br><br>
+  <label for="member1_bio">Hero's Biography: </label><br>
+  <input id="member1_bio" type="text" name="hero[bio]" /><br><br>
 
-  <label for="ship_name_2">Name</label><br>
-  <input id="ship_name_2" type="text" name="pirate[ships][][name]" /><br>
-  <label for="ship_booty_2">Type</label><br>
-  <input id="ship_type_2" type="text" name="pirate[ships][][type]" /><br>
-  <label for="ship_booty_2">Booty</label><br>
-  <input id="ship_booty_2" type="text" name="pirate[ships][][booty]" /><br>
+  <h3> Hero 2</h3>
+  <label for="member2_name">Hero's Name: </label><br>
+  <input id="member2_name" type="text" name="hero[name]" /><br>
+  <label for="member2_power">Hero's Power: </label><br>
+  <input id="member2_power" type="text" name="hero[power]" /><br><br>
+  <label for="member2_bio">Hero's Biography: </label><br>
+  <input id="member2_bio" type="text" name="hero[bio]" /><br><br>
+
+  <h3> Hero 3</h3>
+  <label for="member3_name">Hero's Name: </label><br>
+  <input id="member3_name" type="text" name="hero[name]" /><br>
+  <label for="member3_power">Hero's Power: </label><br>
+  <input id="member3_power" type="text" name="hero[power]" /><br><br>
+  <label for="member3_bio">Hero's Biography: </label><br>
+  <input id="member3_bio" type="text" name="hero[bio]" /><br><br>
+
+
   <input type="submit" value="Submit">
 </form>
+
+
+
+fill_in("member1_name", :with => "Amanda")
+fill_in("member1_power", :with => "Ruby")
+fill_in("member1_bio", :with => "I love Ruby!")
+
+fill_in("member2_name", :with => "Arel")
+fill_in("member2_power", :with => "JavaScript")
+fill_in("member2_bio", :with => "I love JavaScript!")
+fill_in("member3_name", :with => "Katie")
+fill_in("member3_power", :with => "Sinatra")
+fill_in("member3_bio", :with => "I love Sinatra!")
+click_button 'submit'
