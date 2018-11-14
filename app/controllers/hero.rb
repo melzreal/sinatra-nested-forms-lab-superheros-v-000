@@ -1,11 +1,11 @@
 class Hero
-  attr_accessor :name, :type, :booty
+  attr_accessor :name, :power, :bio
 
   @@heroes = []
 
   def initialize(attributes)
       attributes.each {|key, value| self.send(("#{key}="), value)}
-      @@heroes << self 
+      @@heroes << self
   end
 
   def self.all
